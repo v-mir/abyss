@@ -1,0 +1,5 @@
+ABYSS — Proprietary hybrid-license.
+Core components (abyss-core, abyss-cold, docs) intended to be open-sourced under a permissive license.
+Vault backend and customer-facing app are proprietary.
+
+(Placeholder license — consult legal counsel for an exact license template.)
