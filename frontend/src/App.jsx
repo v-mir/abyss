@@ -1,53 +1,27 @@
 export default function App() {
   return (
-    <div style={styles.page}>
-      <h1 style={styles.title}>ABYSS</h1>
+    <div className="page">
+      <header className="header">
+        <span className="logo">ABYSS</span>
+        <span className="status">● offline</span>
+      </header>
 
-      <div style={styles.card}>
-        <p>🔐 Vault status: inactive</p>
-        <button style={styles.button}>Initialize</button>
-      </div>
+      <main className="main">
+        <div className="vault">
+          <h2>Vault</h2>
+          <p className="hint">
+            Secure environment not initialized
+          </p>
 
-      <p style={styles.footer}>
-        Abyss UI • React + Vite • GitHub Pages
-      </p>
+          <button className="primary">
+            Initialize Vault
+          </button>
+        </div>
+      </main>
+
+      <footer className="footer">
+        Abyss UI · v0.1
+      </footer>
     </div>
   )
-}
-
-const styles = {
-  page: {
-    minHeight: '100vh',
-    background: '#050505',
-    color: '#e5e5e5',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 24,
-    fontFamily: 'monospace',
-  },
-  title: {
-    fontSize: 48,
-    letterSpacing: 4,
-  },
-  card: {
-    padding: 24,
-    border: '1px solid #222',
-    borderRadius: 8,
-    minWidth: 280,
-    textAlign: 'center',
-  },
-  button: {
-    marginTop: 16,
-    padding: '10px 16px',
-    background: '#0ff',
-    border: 'none',
-    cursor: 'pointer',
-    fontWeight: 'bold',
-  },
-  footer: {
-    opacity: 0.5,
-    fontSize: 12,
-  },
 }
