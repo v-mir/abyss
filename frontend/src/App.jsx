@@ -1,27 +1,15 @@
-export default function App() {
+import Header from "./components/Header"
+
+function App() {
   return (
-    <div className="page">
-      <header className="header">
-        <span className="logo">ABYSS</span>
-        <span className="status">● offline</span>
-      </header>
-
-      <main className="main">
-        <div className="vault">
-          <h2>Vault</h2>
-          <p className="hint">
-            Secure environment not initialized
-          </p>
-
-          <button className="primary">
-            Initialize Vault
-          </button>
-        </div>
+    <>
+      <Header />
+      <main style={{ padding: "20px", color: "white" }}>
+        <h1>Abyss UI</h1>
+        <p>Welcome to the Abyss.</p>
       </main>
-
-      <footer className="footer">
-        Abyss UI · v0.1
-      </footer>
-    </div>
+    </>
   )
 }
+
+export default App
